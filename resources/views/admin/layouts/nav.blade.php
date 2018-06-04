@@ -18,12 +18,12 @@
                     <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                     <!-- <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li> -->
                 @else
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('projects.index')}}">Projects</a>
                     </li>
                         
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Tecnologies</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('tecnologies.index')}}">Tecnologies</a>
                     </li>
                         
                     <li class="nav-item dropdown">
@@ -32,9 +32,9 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="">Personal Perfil</a>
+                        <a class="dropdown-item" href="{{route('users.index')}}">Personal Perfil</a>
 
-                            <a class="dropdown-item" href="">Settings</a>
+                            <a class="dropdown-item" href="{{route('settings.index')}}">Settings</a>
 
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}

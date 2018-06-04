@@ -14,7 +14,7 @@ class TecnologiesController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.tecnologies.index');
     }
 
     /**

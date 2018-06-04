@@ -18,6 +18,6 @@ class Project extends Model
         'photo', 
         'link',
         'clientName',
-        'isActive'
+        'isActive',
     ];
 }
